@@ -1,23 +1,37 @@
 {
-  "name": "qjob",
+  "name": "spa092",
   "version": "1.0.0",
-  "description": "Асуулгад суурилсан мэргэжил сонголтын ухаалаг веб систем",
-  "main": "src/js/app.js",
-  "type": "module",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "npx live-server src",
-    "start": "npx live-server src"
+    "sass": "sass --watch --quiet src092/scss/main.scss src092/css/main.css",
+    "generate:images": "node src092/tools/generate-images-json.mjs",
+    "build": "sass --quiet src092/scss/main.scss src092/css/main.css",
+    "dev": "npm run build && live-server src092",
+    "start": "live-server src092"
   },
   "keywords": [
     "career",
+    "job",
     "guidance",
-    "quiz",
-    "qjob"
+    "quiz"
   ],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "bulma": "^1.0.4",
     "sass": "^1.99.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swe2461092-sketch/Qjob.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swe2461092-sketch/Qjob/issues"
+  },
+  "homepage": "https://github.com/swe2461092-sketch/Qjob#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }
