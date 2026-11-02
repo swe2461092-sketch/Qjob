@@ -1,0 +1,23 @@
+{
+  "name": "qjob",
+  "version": "1.0.0",
+  "description": "Асуулгад суурилсан мэргэжил сонголтын ухаалаг веб систем",
+  "main": "src/js/app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx live-server src",
+    "start": "npx live-server src"
+  },
+  "keywords": [
+    "career",
+    "guidance",
+    "quiz",
+    "qjob"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^1.0.4",
+    "sass": "^1.99.1"
+  }
+}
